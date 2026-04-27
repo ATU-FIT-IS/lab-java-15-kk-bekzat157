@@ -10,5 +10,7 @@ public class MainTest {
         } else {
             System.out.println("Odd");
         }
+
+
     }
 }

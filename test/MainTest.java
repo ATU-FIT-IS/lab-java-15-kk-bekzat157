@@ -1,15 +1,16 @@
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.jupiter.api.Test;
-
+import java.util.Scanner;
 public class MainTest {
+    public static void main (String args[]) {
+        Scanner sc = new Scanner (System.in);
+        System.out.print("Sandy engiziniz: ");
+        int a = sc.nextInt();
+        if (a % 2 == 0) {
+            System.out.println("Even");
 
-    @Test
-    void testSum() {
-        assertEquals(5, Main.sum(2, 3));
-    }
+        } else {
+            System.out.println("Odd");
+        }
 
-    @Test
-    void testNegative() {
-        assertEquals(-1, Main.sum(2, -3));
+
     }
 }
